@@ -1,6 +1,7 @@
 package com.codigo.msregister.aggregates.model;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.MappedSuperclass;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,6 +9,7 @@ import java.sql.Timestamp;
 
 @Getter
 @Setter
+@MappedSuperclass
 public class Audit {
     @Column(name = "user_create",length = 45,nullable = true)
     private String userCreate;

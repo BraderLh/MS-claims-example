@@ -24,5 +24,4 @@ public class EnterprisesTypeEntity extends Audit {
     @Column(name = "status",nullable = false)
     private int status;
 
-
 }

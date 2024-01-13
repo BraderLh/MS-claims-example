@@ -39,5 +39,4 @@ public class PersonsEntity extends Audit {
     @JoinColumn(name = "enterprises_id_enterprises",nullable = false)
     private EnterprisesEntity enterprisesEntity;
 
-
 }

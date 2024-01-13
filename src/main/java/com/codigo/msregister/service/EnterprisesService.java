@@ -8,5 +8,6 @@ public interface EnterprisesService {
     ResponseBase findOneEnterprise(Integer id);
     ResponseBase  findAllEnterprises();
     ResponseBase updateEnterprise(Integer id, RequestEnterprises requestEnterprises);
-
+    ResponseBase safeDeleteEnterprise(Integer id);
+    ResponseBase permanentDeleteEnterprise(Integer id);
 }

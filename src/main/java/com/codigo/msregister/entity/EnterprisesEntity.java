@@ -33,6 +33,4 @@ public class EnterprisesEntity extends Audit {
     @JoinColumn(name = "document_type_id_document_type",nullable = false)
     private DocumentsTypeEntity documentsTypeEntity;
 
-
-
 }

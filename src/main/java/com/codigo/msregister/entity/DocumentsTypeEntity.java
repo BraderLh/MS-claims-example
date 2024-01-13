@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+@NamedQuery(name = "DocumentsTypeEntity.findByCodType", query = "select a from DocumentsTypeEntity a where a.codType=:codType")
 @Entity
 @Getter
 @Setter
@@ -22,4 +23,5 @@ public class DocumentsTypeEntity extends Audit {
     private String descType;
     @Column(name = "status",nullable = false)
     private int status;
+
 }
